@@ -1,0 +1,159 @@
+/* Nav */
+nav {
+  background: #fff;
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  min-height: 60px !important;
+}
+
+nav a {
+  color: #d56bcc;
+  font-size: 16px;
+  height: 100%;
+}
+
+nav a.navbar-brand {
+  color: #57d2c3;
+}
+
+/* Controls */
+.controls {
+  background: #fff;
+  color: #444;
+  padding: 15px;
+}
+
+/* Articles */
+.article img, .article figure {
+  max-width: 100%;
+}
+
+.article {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.article-wrap:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAESCAQAAAB9HsyAAAAAcElEQ…bQNOdcTQ3mziuVQxrFgXnQd4/Or9B6NGuFQ9rFRvd08ABmyQUf/gBAlQAAAABJRU5ErkJggg==') left bottom repeat-x;
+}
+
+.article h2{
+  font-size: 24px;
+}
+
+.article .article-wrap {
+  position: relative;
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  padding:5px 10px;
+  height: 100%;
+}
+
+.article .article-wrap .details{
+  /*height: 100px;*/
+  overflow:hidden;
+}
+
+.article .other-deats {
+  bottom: 0;
+  position: absolute;
+}
+
+.article .shadow{
+  background-color: #000!important;
+    opacity: 0.3;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.article a {
+  color: #222;
+}
+
+.article h3 {
+  margin-top:5px;
+  font-family: "Benton Sans","Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+/* Social Links */
+ul.post-social-share {
+  list-style-type:none;
+}
+
+ul.post-social-share li {
+  margin-right:20px;
+  font-size:16px;
+  letter-spacing:1px;
+  float:left;
+}
+
+/* Modals */
+#articleModal img, #articleModal figure {
+  max-width:100%;
+}
+
+body {
+  background-color: #f4f4f4 !important;
+}
+
+/* Login/Signup */
+#login {
+    margin-top: 100px;
+}
+
+/* Main */
+main {
+  margin-bottom: 20px;
+  min-height: 450px;
+}
+
+/* Footer */
+footer, footer nav {
+  background-color: #333;
+  padding: 20px 40px;
+}
+
+footer li {
+  float: left;
+  padding: 10px;
+}
+
+
+/* Opportunity Details */
+header.opportunity-header {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: table;;
+  background-size: cover;
+  /* background-position: center; */
+  background-image: url('https://img.evbuc.com/https%3A%2F%2Fimg.evbuc.com%2Fhttps%253A%252F%252Fcdn.evbuc.com%252Fimages%252F16364837%252F135308173200%252F1%252Foriginal.jpg%3Frect%3D0%252C240%252C2496%252C1248%26s%3Dc3a1e431e012ea22f0668cf66f630a65?w=1000&s=14293edf3dc3765257547aec96c21e14');
+}
+
+header .img-overlay {
+  background-image: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=#70000000, endColorstr=#70000000 );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header .headline {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 44em;
+  color: #fff;
+}

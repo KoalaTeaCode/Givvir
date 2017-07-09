@@ -1,0 +1,91 @@
+Running on port3000
+{ title: 'jhhh', link: 'undefined' }
+TypeError: undefined is not a function
+    at /var/www/gamefeeds/server.js:67:8
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:131:13)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:125:14)
+    at Route.dispatch (/var/www/gamefeeds/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/var/www/gamefeeds/node_modules/express/lib/router/index.js:176:3)
+    at router (/var/www/gamefeeds/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/gamefeeds/node_modules/express/lib/router/index.js:312:13)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+{ title: 'sdf', link: 'sdf' }
+TypeError: undefined is not a function
+    at /var/www/gamefeeds/server.js:67:8
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:131:13)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:125:14)
+    at Route.dispatch (/var/www/gamefeeds/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/var/www/gamefeeds/node_modules/express/lib/router/index.js:176:3)
+    at router (/var/www/gamefeeds/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/gamefeeds/node_modules/express/lib/router/index.js:312:13)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+{ title: 'dffd', link: 'undefined' }
+TypeError: undefined is not a function
+    at /var/www/gamefeeds/server.js:67:8
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:131:13)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:125:14)
+    at Route.dispatch (/var/www/gamefeeds/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/var/www/gamefeeds/node_modules/express/lib/router/index.js:176:3)
+    at router (/var/www/gamefeeds/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/gamefeeds/node_modules/express/lib/router/index.js:312:13)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+{ title: 'sdf', link: 'undefined' }
+TypeError: undefined is not a function
+    at /var/www/gamefeeds/server.js:67:8
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:131:13)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:125:14)
+    at Route.dispatch (/var/www/gamefeeds/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/var/www/gamefeeds/node_modules/express/lib/router/index.js:176:3)
+    at router (/var/www/gamefeeds/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/gamefeeds/node_modules/express/lib/router/index.js:312:13)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+{ title: 'sdf', link: 'undefined' }
+TypeError: undefined is not a function
+    at /var/www/gamefeeds/server.js:67:8
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:131:13)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/route.js:125:14)
+    at Route.dispatch (/var/www/gamefeeds/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/var/www/gamefeeds/node_modules/express/lib/router/index.js:176:3)
+    at router (/var/www/gamefeeds/node_modules/express/lib/router/index.js:46:12)
+    at Layer.handle [as handle_request] (/var/www/gamefeeds/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/gamefeeds/node_modules/express/lib/router/index.js:312:13)
+    at /var/www/gamefeeds/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/var/www/gamefeeds/node_modules/express/lib/router/index.js:330:12)
+    at next (/var/www/gamefeeds/node_modules/express/lib/router/index.js:271:10)

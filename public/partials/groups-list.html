@@ -1,0 +1,47 @@
+<!-- Filter Bar -->
+<div class="controls row">
+  <div class="col-md-3">
+    <div class="form-group">
+      <input class="col-md-12 form-control" type=text ng-model="query" placeholder="Search" /><br />
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label>Sort</label>
+    <div class="btn-group" role="group" aria-label="Sort">
+      <!-- <li><a>ID</a> -->
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='date'}" ng-click="sort='date'">Recent</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='shares'}" ng-click="sort='shares'" >Popular</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='desc'}" ng-click="sort='desc'">Desc</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='link'}" ng-click="sort='link'">link</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='title'}" ng-click="sort='title'">Title</button>
+    </div>
+  </div>
+
+  <form class="col-md-5 form-inline">
+    <button type="button" class="btn btn-default" ng-click="prevDate()"><</button>
+    <div class="form-group">
+      <label >From</label>
+      <input class="form-control" ng-model="articleFilters.date1"  type="text" placeholder="" /><br />
+    </div>
+    <div class="form-group">
+      <label>To</label>
+      <input class="form-control" ng-model="articleFilters.date2"  type="text" placeholder="" /><br />
+    </div>
+    <button type="button" class="btn btn-default" ng-click="nextDate()">></button>
+    <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+  </form>
+</div>
+
+
+<div class=col-md-12 >
+  <!-- Main Feed -->
+  <div ng-repeat="group in groups | orderBy: sort" class="article col-md-3" style="margin-top:40px;">
+    <div class="article-wrap">
+      <h2>{{group.name}}</h2>
+      <button class="btn btn-default" ng-click="readMore(group)"><a href="/#/organizations/{{group._id}}">Read More</a></button>
+      <!-- <button type="button" class="btn btn-primary" ng-click="addBookmark(group)">Bookmark</button> -->
+    </div>
+  </div>
+  
+</div>

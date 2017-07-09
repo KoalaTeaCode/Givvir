@@ -1,0 +1,112 @@
+<div style="background-image:url('http://img1.meetupstatic.com/img/650788672797009687495346/explore_page_photos/find-4.jpg');height:300px;" >
+  <div class="prebody-doc-box content" id="what-it-is">
+    <!-- <h1>
+    Meetups are
+    </h1>
+    <h2 class="desc">
+    neighbors getting together to learn something, do something, share something…
+    </h2> -->
+    <a href="https://secure.meetup.com/quick_reg/" id="alien-join" class="button-flat--white omnCamp omnrg_findbtn">Sign me up!&nbsp;<i class="icon-m icon-disclosure-right"></i></a>
+  </div>
+</div>
+
+<!-- Filter Bar -->
+<div class="controls row">
+  <div class="col-md-3">
+    <div class="form-group">
+      <input class="col-md-12 form-control" type=text ng-model="query" placeholder="Search" /><br />
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label>Sort</label>
+    <div class="btn-group" role="group" aria-label="Sort">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+      <!-- <li><a>ID</a> -->
+      <!-- <button type="button" class="btn btn-default" ng-class="{active: sort=='date'}" ng-click="sort='date'">Recent</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='shares'}" ng-click="sort='shares'" >Popular</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='desc'}" ng-click="sort='desc'">Desc</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='link'}" ng-click="sort='link'">link</button>
+      <button type="button" class="btn btn-default" ng-class="{active: sort=='title'}" ng-click="sort='title'">Title</button> -->
+    </div>
+  </div>
+
+  <form class="col-md-5 form-inline">
+    <button type="button" class="btn btn-default" ng-click="prevDate()"><</button>
+    <div class="form-group">
+      <label >From</label>
+      <input class="form-control" ng-model="articleFilters.date1"  type="text" placeholder="" /><br />
+    </div>
+    <div class="form-group">
+      <label>To</label>
+      <input class="form-control" ng-model="articleFilters.date2"  type="text" placeholder="" /><br />
+    </div>
+    <button type="button" class="btn btn-default" ng-click="nextDate()">></button>
+    <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+  </form>
+</div>
+
+<div class=row >
+
+  <!-- <div ng-repeat="phone in phones | filter:search | orderBy: sort" class="article" style="margin-top:40px;"> -->
+  <div ng-repeat="phone in phones | orderBy: sort" class="article col-md-3" style="margin-top:40px;">
+    <img src="https://img.evbuc.com/https%3A%2F%2Fimg.evbuc.com%2Fhttp%253A%252F%252Fcdn.evbuc.com%252Fimages%252F16364837%252F135308173200%252F1%252Foriginal.jpg%3Frect%3D0%252C240%252C2496%252C1248%26s%3D29cbe7f74d636e65b34d8f97e9df5e60?h=230&w=460&s=3d920c0bb012fe362f045a4a298df5b5" />
+    <div class="article-wrap">
+      <h3>{{phone.title}}</h3>
+      <div class="details">
+        <div ng-bind-html="phone.desc"></div>
+        <a target="_blank" class="embedly-card" href={{phone.link}}>{{phone.title}}</a>
+      </div>
+      <div class="other-deats">
+        <!-- <div class="col-md-2"><span><strong>{{phone.shares | number}}</strong> shares</span></div> -->
+        <div class="col-md-10">{{phone.date}}</div>
+      </div>
+      <a href=/#/opportunities/{{phone._id}}><button class="btn btn-default" ng-click="readMore(phone)">View</button></a>
+      <button type="button" class="btn btn-primary" ng-click="addBookmark(phone)"><i class="fa fa-bookmark"></i></button>
+    </div>
+  </div>
+
+  <!-- Article Modal -->
+  <div class="modal fade" id="articleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>{{selectedArticle.title}}</h2>
+        </div>
+        <div class="modal-body">
+          <div ng-bind-html="selectedArticle.desc"></div>
+          <button type="button" class="btn btn-primary" ng-click="join(selectedArticle)">Join</button>
+
+          <div ng-repeat="member in members">
+            {{member}}
+          </div>
+        </div>
+        <div class="modal-footer">
+          <ul class="post-social-share">
+            <li>Share:</li>
+            <li><a class="tip social-facebook" data-tip="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{selectedArticle.link}}"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="tip social-twitter" data-tip="Twitter" target="_blank" href="https://twitter.com/home?status={{selectedArticle.title}} - {{selectedArticle.link}}"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="tip social-pinterest" data-tip="Pinterest" data-pin-do="skipLink" target="_blank" href="https://pinterest.com/pin/create/button/?url={{selectedArticle.link}}"><i class="fa fa-pinterest"></i></a></li>
+            <li><a class="tip social-google" data-tip="Google+" target="_blank" href="https://plus.google.com/share?url={{selectedArticle.link}}"><i class="fa fa-google-plus"></i></a></li>
+            <li><a rel="nofollow" class="tip social-linkedin" data-tip="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=={{selectedArticle.link}};title={{selectedArticle.title}}&amp;summary={{selectedArticle.desc}}&amp;source=" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <!-- <li><a rel="nofollow" class="tip social-vk" data-tip="VK" href="http://vk.com/share.php?url=http://demo.pastelfriday.com/simplart/2015/08/two-minutes-with-tgd-are-you-creatively-satisfied/&amp;title=Two Minutes With TGD: Are You Creatively Satisfied?&amp;description=I could not help it, but I began to feel suspicious of this “dark complexioned” harpooneer. At any rate, I made up my mind that if it so turned out that we should sleep together, he must undress and get into bed before I did. Supper over, the company went back to the bar-room, when, […]&amp;image=http://demo.pastelfriday.com/simplart/wp-content/uploads/2015/08/14538200081_229b32d258_k-1-300x200.jpg&amp;noparse=true" target="_blank"><i class="fa fa-vk"></i></a></li> -->
+          </ul>
+          <button type="button" class="btn btn-primary" ng-click="addFavorite(selectedArticle)">Favorite</button>
+          <button type="button" class="btn btn-primary" ng-click="addBookmark(selectedArticle)">Bookmark</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Sweet</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

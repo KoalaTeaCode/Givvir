@@ -1,0 +1,28 @@
+{
+  "name": "beerloacker",
+  "main": "server.js",
+  "dependencies": {
+    "async": "^1.5.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.0",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.11.3",
+    "jsonwebtoken": "^5.4.1",
+    "mongoose": "^4.1.8",
+    "morgan": "^1.6.1",
+    "oauth2orize": "^1.1.0",
+    "passport": "^0.3.0",
+    "passport-http": "^0.3.0",
+    "passport-http-bearer": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "expect.js": "^0.3.1",
+    "forever-monitor": "^1.7.0",
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0",
+    "supertest": "^1.1.0"
+  }
+}

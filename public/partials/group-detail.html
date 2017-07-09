@@ -1,0 +1,66 @@
+<div class=row>
+  <h1>{{group.name}}</h1>
+  <button class="btn btn-primary" ng-click="inviteMember()" >Invite</button>
+
+  <div class=col-md-6>
+    <div class="col-md-12">
+      <h2>Members</h2>
+      <button class="btn btn-primary" ng-click="joinGroup()" >Join</button>
+    </div>
+    <div class="col-md-12" ng-repeat="member in members">
+      {{member._id}}
+      {{member.status}}
+      <!-- @TODO: If user is equal to this member -->
+      <button class="btn btn-primary" ng-click="leaveGroup(member)" ng-show="member._id === user._id" >Leave</button>
+      <!-- @TODO: If user can remove -->
+      <button class="btn btn-primary" ng-click="removeMember(member)" ng-show="user.permissions.removeGroups.indexOf(group._id) !== -1" >Remove</button>
+    </div>
+  </div>
+
+  <div class=col-md-6>
+    <div class="col-md-12">
+      <h2>Chat</h2>
+    </div>
+    <!-- Message Form -->
+    <div class="col-md-12">
+      <form ng-submit="addMessage()">
+        <input type=text ng-model=messageToAdd.message placeholder="Message" />
+        <input type=submit class="btn btn-primary" value="Post Message" />
+      </form>
+    </div>
+
+    <div class="col-md-12" ng-repeat="message in messages">
+      <span ng-hide=editMessage >{{message.message}}</span>
+      <input type=text ng-model=message.message  ng-show=editMessage />
+      <!-- @TODO: Add checks to make sure message belongs to user -->
+      <button class="btn btn-primary" ng-click="editMessage=true" ng-hide=editMessage >Edit</button>
+      <button class="btn btn-primary" ng-click="editMessage=false;updateMessage(message)" ng-show=editMessage >Save</button>
+      <button class="btn btn-primary" ng-click="deleteMessage(message)" >Delete</button>
+    </div>
+
+  </div>
+
+  <div class=col-md-6>
+    <div class="col-md-12">
+      <h2>Opportunities</h2>
+    </div>
+    <!-- Message Form -->
+    <div class="col-md-12">
+      <form ng-submit="addOpportunity()">
+        <input type=text ng-model=opportunityToAdd.title placeholder="Title" />
+        <input type=submit class="btn btn-primary" value="Add Opportunity" />
+      </form>
+    </div>
+
+    <div class="col-md-12" ng-repeat="opportunity in opportunities">
+      <span ng-hide=editMessage >{{opportunity.title}}</span>
+      <input type=text ng-model=message.message  ng-show=editMessage />
+      <!-- @TODO: Add checks to make sure message belongs to user -->
+      <button class="btn btn-primary" ng-click="editMessage=true" ng-hide=editMessage >Edit</button>
+      <button class="btn btn-primary" ng-click="editMessage=false;updateMessage(message)" ng-show=editMessage >Save</button>
+      <button class="btn btn-primary" ng-click="deleteMessage(message)" >Delete</button>
+    </div>
+
+  </div>
+
+</div>
